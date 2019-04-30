@@ -1,15 +1,15 @@
 <?php
 
-namespace Techlify\SimpleInventory;
+namespace Techlify\FileManager;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
- * Description of SimpleInventoryServiceProvider
+ * Description of FileManagerServiceProvider
  *
  * @author 
  */
-class SimpleInventoryServiceProvider extends ServiceProvider
+class FileManagerServiceProvider extends ServiceProvider
 {
 
     /**
@@ -30,12 +30,12 @@ class SimpleInventoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(SimpleInventory::class, function ()
+        $this->app->singleton(FileManager::class, function ()
         {
-            return new SimpleInventory();
+            return new FileManager();
         });
 
-        $this->app->alias(SimpleInventory::class, 'simple-inventory');
+        $this->app->alias(FileManager::class, 'file-manager');
     }
 
 }
