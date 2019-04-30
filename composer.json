@@ -1,5 +1,5 @@
 {
-    "name": "techlify/file-manager",
+    "name": "techlify/laravel-file-manager",
     "description": "A Module that provides a File Management REST API for Laravel",
     "type": "package",
     "require": {
